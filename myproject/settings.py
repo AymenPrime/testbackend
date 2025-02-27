@@ -83,17 +83,12 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        
-        'NAME': '',
-
-        'USER': '',
-
-        'PASSWORD': '',
-
-        'HOST': '',
-
-        'PORT': '',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'railway',
+        'USER': 'root',
+        'PASSWORD': 'sXKAxBKrGGvGCmDPOeEBlzBoNJSObpkP',
+        'HOST': 'mysql.railway.internal',  # Fetch from environment variables
+        'PORT': '3306',
     }
 }
 
